@@ -90,44 +90,6 @@ Or install individually:
 pip install aiohttp requests rich
 ```
 
-### Alternative Installation Methods
-
-#### Using pip (if published to PyPI)
-```bash
-pip install crawlx
-```
-
-#### Using Docker
-```bash
-# Build Docker image
-docker build -t crawlx .
-
-# Run CrawlX in container
-docker run --rm -v $(pwd)/results:/app/crawlx_results crawlx -d example.com
-```
-
-#### Using Virtual Environment (Recommended)
-```bash
-# Clone repository
-git clone https://github.com/VIRTUAL-VIRUZ/crawlx.git
-cd crawlx
-
-# Create virtual environment
-python -m venv crawlx-env
-
-# Activate virtual environment
-# Linux/macOS:
-source crawlx-env/bin/activate
-# Windows:
-crawlx-env\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run CrawlX
-python crawlx.py -d example.com
-```
-
 ## Quick Start
 
 After installation, you can immediately start using CrawlX:
